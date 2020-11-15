@@ -1,0 +1,23 @@
+.container {
+  width: 1000px;
+  background: cornsilk;
+  display: grid;
+  /* grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px; */
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-row-gap: "30px"; 
+  grid-column-gap: "30px"; */
+
+  grid-gap: 10px; /* gap between each row and column */
+}
+
+.container .item1 {
+  grid-row: 2/3; /*row second line start/ row third line end */
+  grid-column: 2/3; /*column second line start/ column third line end */
+}
+
+.container .item4 {
+  grid-column: 1/-1; /*to expand coulmn all thw way to end of column  */
+}
